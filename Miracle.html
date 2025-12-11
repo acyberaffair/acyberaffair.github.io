@@ -23,7 +23,7 @@ The damage the medication had done was severe. Masses of people died, large citi
 
 Then the world ended. The medication had to run out at some point. You weren&#39;t entirely dependent on your meds when it came to your depression. You had other resources: you always felt welcome to talk to your parents, or your friends; however, you couldn&#39;t go without your antipsychotics. You wished you could. You really did. Every time you tried to get off of them, your hallucinations returned. They were horrible. You don&#39;t even want to think about it right now.
 
-[[After all, you just heard your parents contemplate using the miracle cure to help you.|PrologueEnd]]</tw-passagedata><tw-passagedata pid="4" name="PrologueEnd" tags="" position="700,850" size="100,100">You&#39;d heard the horror stories of what it had done to people. You&#39;ve seen corpses. You&#39;ve seen the heavily mutated ones try to attack you and your family. You promised to yourself that you wouldn&#39;t use the cure if you could help it. 
+[[After all, you heard your parents contemplate using the miracle cure to help you.|PrologueEnd]]</tw-passagedata><tw-passagedata pid="4" name="PrologueEnd" tags="" position="700,850" size="100,100">You&#39;d heard the horror stories of what it had done to people. You&#39;ve seen corpses. You&#39;ve seen the heavily mutated ones try to attack you and your family. You promised to yourself that you wouldn&#39;t use the cure if you could help it. 
 
 Now it sounded like you didn&#39;t have a choice. Your parents were going to slip it in your food and your water. They would always deny it when you asked, but you knew. You heard them talk about it constantly.
 
@@ -191,7 +191,7 @@ Hesitantly, he answers: &quot;My name&#39;s Coury.&quot; He bites his bottom lip
 He smiles in a poor attempt to lighten the mood. You would&#39;ve done the same thing in his position, probably. He acknowledges that you dodged the question, but refuses to push it any further. You feel the urge to pick at your fingertips.]
 
 [[&quot;I wish.&quot;|Day1.9.1]]
-[[&quot;No.&quot;|Day1.9]]</tw-passagedata><tw-passagedata pid="19" name="Day1.9" tags="" position="1600,1600" size="100,100">(if: $sanity is 0)[The man nods his head again, then curses to himself. He rests his hands on his knees as he stares out at all of his empty bottles. 
+[[&quot;No.&quot;|Day1.9]]</tw-passagedata><tw-passagedata pid="19" name="Day1.9" tags="" position="1575,1600" size="100,100">(if: $sanity is 0)[The man nods his head again, then curses to himself. He rests his hands on his knees as he stares out at all of his empty bottles. 
 
 &quot;It&#39;s fine, kid. I&#39;ve just been running low.&quot; He sighs starts to pick at his shirt instead. That seems heatlhier. &quot;I&#39;ll need to go out again soon.&quot;
 
@@ -204,7 +204,7 @@ You can&#39;t bring yourself to go out there alone. You aren&#39;t ready. He cle
 
 The man raises his hands to his face. Blood trickles from his pointer finger down to his palm. You watch it with an intense stare then inhale sharply. He chuckles nervously, then rests his hands on his knees.
 
-&quot;Woah, woah. Sorry. It&#39;s just... I&#39;ve been running low.&quot; He gestures to the empty bottles again. He&#39;s still smiling. He rests his hands down on his knees.. &quot;I&#39;ll need to go out again soon.&quot;
+&quot;Woah, woah. Sorry. It&#39;s just... I&#39;ve been running low.&quot; He gestures to the empty bottles again. He&#39;s still smiling. &quot;I&#39;ll need to go out again soon.&quot;
 
 His leg bounces up and down on the stone. He looks at you, as if he were expecting something.
 
@@ -232,7 +232,22 @@ His leg bounces up and down on the stone. He looks at you, as if he were expecti
 
 (if: $sanity is &lt;0)[[[&quot;You&#39;re bleeding.&quot;|Day2]]]
 [[&quot;We should look together.&quot;|Day2.1]]
-</tw-passagedata><tw-passagedata pid="21" name="Day2" tags="" position="1600,1800" size="100,100">The man looks at you. His eyebrows firrpw</tw-passagedata><tw-passagedata pid="22" name="Day2.1" tags="" position="1775,1800" size="100,100"></tw-passagedata></tw-storydata>
+</tw-passagedata><tw-passagedata pid="21" name="Day2" tags="" position="1600,1800" size="100,100">(set: $sanity to it -1)
+
+The man looks at you. His eyebrows knit together. The blood seems to pour from his hand. He looks down to look at himself, then up at you. It&#39;s impossible to tell if he even acknowledge the blood engulfing his hand. It&#39;s somehow getting worse by the minute. Maybe you&#39;re hallucinating again.
+
+You look down at your own hand. You&#39;ve been scratching the back of your palm too. A rash has started to form. It hurts. You keep scratching, but you know that something&#39;s wrong.
+
+&quot;You know,&quot; the man begins. He rises from his spot. &quot;I didn&#39;t want to be this.&quot;
+
+He walks towards you. You watch yourself grow larger in his eyes. Your eyes are widened, and your chest is rising and falling rapidly. He gulps at the same time you do. Something&#39;s wrong. You don&#39;t know how long it&#39;s been wrong for. He places his left hand on your shoulder. You can feel his blood soaking into your shirt.
+
+&quot;I hate what I&#39;ve become. The guilt eats away at me every waking moment I don&#39;t have the cure in me.&quot; His raspy voice is genuine. It feels like sandpaper chipping away at your ears. You want to move your hands to cover your head, but you have to scratch your hand. &quot;I didn&#39;t want to be like this. But I also didn&#39;t want to be the man I was.&quot;
+
+[[&quot;What&#39;s going on?&quot;|Day2.1.0]]
+[[Breathe.|Day2.1.1]]</tw-passagedata><tw-passagedata pid="22" name="Day2.1" tags="" position="1775,1800" size="100,100"></tw-passagedata><tw-passagedata pid="23" name="Day2.1.0" tags="" position="1500,2000" size="100,100">(set: $sanity to it -1)
+
+&quot;I&#39;m being honest with you. I hate myself.&quot; The words are ringing in your ears. You don&#39;t know how to make it stop. &quot;</tw-passagedata><tw-passagedata pid="24" name="Day2.1.1" tags="" position="1700,2000" size="100,100"></tw-passagedata></tw-storydata>
 <script title="Twine engine code" data-main="harlowe">(function(){"use strict";
 var require,define;!function(){var e={},r={};require=function(i){var n=e[i];return n&&(r[i]=n[1].apply(void 0,n[0].map(require)),e[i]=void 0),r[i]},(define=function(r,i,n){if("function"==typeof r)return r();e[r]=[i,n]}).amd=!0}();/*!
  * https://github.com/paulmillr/es6-shim
